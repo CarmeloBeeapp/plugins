@@ -480,6 +480,7 @@ class MethodChannelGoogleMapsFlutter extends GoogleMapsFlutterPlatform {
       'polylinesToAdd': serializePolylineSet(polylines),
       'circlesToAdd': serializeCircleSet(circles),
       'tileOverlaysToAdd': serializeTileOverlaySet(tileOverlays),
+      'groundOverlaysToAdd': serializeGroundOverlaySet(tileOverlays),
     };
     if (defaultTargetPlatform == TargetPlatform.android) {
       return AndroidView(
